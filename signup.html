@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Waisted || Sign up</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <style>
+        main div{
+            /* height: 450px; */
+            width: 400px;
+        }
+
+        form{
+            width: 100%;
+        }
+        label{
+            margin-top: 20px;
+        }
+        input{
+            border: 1.5px solid #000;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #d1897E;
+            color: #fff;
+            padding: 15px;
+            margin-top: 45px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class=" bg-white flex justify-between items-center" id="navbar">
+        <div class="flex justify-center items-center">
+            <span class="ml-3">
+                <img src="asset/img/logo.jpg" alt="">
+            </span>
+        </div>
+
+        <ul class="flex space-x-3 mr-4">
+            <li>
+                <a href="./login.html">
+                    <img src="asset/img/icons/profile.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="asset/img/icons/search.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="asset/img/icons/cart.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <span class="hidden">
+            <ion-icon name="menu-outline" class="w-10 h-10"></ion-icon>
+        </span>
+    </nav>
+    
+    <main class="flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="font-semibold text-lg">Welcome To Pretty Waisted</h1>
+            <p class="my-6 text-base font-normal">Creat an account or <a href="login.html" class="outline-dashed" style="text-decoration: dotted; color: #d1897E;">Log in</a></p>
+            <p class="text-xs">By signing up, i agree with pretty waisted Terms of services and Privacy Policy.</p>
+
+            <form action="" class="flex flex-col justify-start">
+                <label for="text" class="text-sm font-semibold">Full name</label>
+                <input type="text" name="" id="" placeholder="Enter your full name" class="text-gray-300 p-2" required>
+
+                <label for="email" class="text-sm font-semibold">Email address</label>
+                <input type="email" name="" id="" placeholder="Enter your email address" class="text-gray-300 p-2" required>
+
+                <label for="password" class="text-sm font-semibold">Email address</label>
+                <input type="password" name="" id="" placeholder="Enter your password" class="text-gray-300 p-2" required>
+
+                <button type="submit" class="">Log in</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
